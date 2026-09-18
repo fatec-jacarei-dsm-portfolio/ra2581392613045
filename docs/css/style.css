@@ -910,6 +910,28 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .side-list--lang li:last-child { padding-bottom: 0; border-bottom: 0; }
 
 /* ---------------------------------------------------------- 12. VÍDEOS */
+/* ---- player do pitch (video nativo, sem biblioteca) ---- */
+.player {
+  margin: 0 0 var(--gap);
+  padding: clamp(.7rem, .5rem + .8vw, 1rem);
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-xl);
+  background: linear-gradient(160deg, var(--accent-tint), transparent 60%), var(--surface);
+  box-shadow: var(--shadow);
+}
+.player video {
+  display: block;
+  width: 100%; height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r);
+  background: #05070b;
+}
+.player figcaption {
+  padding: .9rem .4rem .2rem;
+  font-size: .88rem;
+  color: var(--muted);
+}
+
 .videos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));

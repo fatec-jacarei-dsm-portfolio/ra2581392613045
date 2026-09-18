@@ -1,11 +1,946 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio - GABRIEL REGINALDO TEODORO DOS SANTOS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio de Gabriel Reginaldo Teodoro dos Santos — estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí e desenvolvedor back-end.">
+<meta name="author" content="Gabriel Reginaldo Teodoro dos Santos">
+<meta name="theme-color" content="#0b0e14">
+<title>Gabriel Teodoro — Portfólio | DSM Fatec Jacareí</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de GABRIEL REGINALDO TEODORO DOS SANTOS</h1>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===== Sprite de ícones: SVG local, sem bibliotecas de terceiros ===== -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-2.1c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.3 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.48 3.14-1.18 3.14-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.36-1.85c3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H3v6M15 3h6v6M15 21h6v-6M9 21H3v-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5V8.5Z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="6" rx="2"/><rect x="3" y="15" width="18" height="6" rx="2"/><path d="M7 6h.01M7 18h.01M11 6h4M11 18h4"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M7 10l2.5 2L7 14M12.5 14.5h4.5"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 2.5 7.5 12 12.5l9.5-5L12 2.5Z"/><path d="M2.5 12.5 12 17.5l9.5-5M2.5 17 12 22l9.5-5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.8 3 2.8 16 0 19M12 2.5c-2.8 3-2.8 16 0 19"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.2 6.3L20.5 11l-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-2.2L12 2.5Z"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5M21 9v6"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 7 22l5-2.5L17 22l-1.5-7.5"/></symbol>
+  <symbol id="i-case" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="13" rx="2.5"/><path d="M8.5 7V5.5A2 2 0 0 1 10.5 3.5h3a2 2 0 0 1 2 2V7M2.5 12.5h19"/></symbol>
+  <symbol id="i-lang" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h9M7.5 5v1.5c0 3.6-2 6.8-4.5 8M5 9.5c.8 2.4 2.8 4.4 5.5 5.2M12.5 21l4-10 4 10M14 18h5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-9.4A4.1 4.1 0 0 1 12 8a4.1 4.1 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20Z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c1.2-3.8 4-6 7.5-6s6.3 2.2 7.5 6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7.5 4 12l4.5 4.5M15.5 7.5 20 12l-4.5 4.5"/></symbol>
+  <symbol id="i-game" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 7.5h9a5 5 0 0 1 4.8 6.3l-.7 2.6a2.6 2.6 0 0 1-4.6.9L14.6 16H9.4l-1.4 1.3a2.6 2.6 0 0 1-4.6-.9l-.7-2.6A5 5 0 0 1 7.5 7.5Z"/><path d="M7.5 11.8h1.6M8.3 11v1.6M15.2 11.4h.01M17 12.6h.01"/></symbol>
+</svg>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#inicio" aria-label="Início — Gabriel Teodoro">
+      <span class="brand__mark" aria-hidden="true">GT</span>
+      <span class="brand__txt"><b>Gabriel Teodoro</b><small>DSM · Fatec Jacareí</small></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+        <svg class="ico ico--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+        <svg class="ico ico--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <svg class="ico ico--open" aria-hidden="true"><use href="#i-menu"></use></svg>
+        <svg class="ico ico--close" aria-hidden="true"><use href="#i-x"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main id="conteudo">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="inicio">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Fatec Jacareí · DSM · 4º semestre</p>
+      <h1 class="hero__title">Gabriel <span>Teodoro</span></h1>
+      <p class="hero__role">Desenvolvedor back-end · Estudante de Desenvolvimento de Software Multiplataforma</p>
+      <p class="hero__pitch">
+        Construo o lado do sistema que ninguém vê e todo mundo depende: modelagem de dados,
+        regras de negócio que não deixam a aplicação entrar em estado inválido e permissões
+        verificadas no lugar certo. Vim do PCP para a tecnologia — e trouxe a mania de
+        entender o processo antes de escrever a primeira linha.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projetos">Ver projetos<svg class="ico" aria-hidden="true"><use href="#i-down"></use></svg></a>
+        <a class="btn" href="https://github.com/teodoroooo" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg>GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/gabrielteodoroo" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"></use></svg>LinkedIn</a>
+      </div>
+      <ul class="hero__stack" aria-label="Principais tecnologias">
+        <li>TypeScript</li><li>Node.js</li><li>Python</li><li>PostgreSQL</li><li>Docker</li><li>React</li>
+      </ul>
+    </div>
+
+    <div class="hero__photo">
+      <span class="photo-ring" aria-hidden="true"></span>
+      <img src="img/perfil.webp" alt="Gabriel Teodoro sorrindo, de camisa social clara" width="720" height="720" decoding="async">
+      <span class="photo-chip photo-chip--a"><svg class="ico" aria-hidden="true"><use href="#i-server"></use></svg>Back-end</span>
+      <span class="photo-chip photo-chip--b"><svg class="ico" aria-hidden="true"><use href="#i-case"></use></svg>Fenoxtec</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SOBRE ============================ -->
+<section class="section" id="sobre">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-user"></use></svg>Apresentação</p>
+      <h2 class="section__title">Muito prazer, <span>sou o Gabriel</span></h2>
+    </header>
+
+    <div class="about">
+      <div class="about__text reveal">
+        <p>
+          Sou <b>Gabriel Reginaldo Teodoro dos Santos</b>, estudante de <b>Desenvolvimento de
+          Software Multiplataforma na Fatec Jacareí</b>, hoje no 4º semestre, e desenvolvedor
+          na <b>Fenoxtec</b>.
+        </p>
+        <p>
+          Minha entrada na tecnologia não foi direta. Trabalhei como <b>auxiliar de PCP</b>,
+          acompanhando de perto processos de produção — e foi exatamente ali que percebi o
+          quanto um sistema bem feito muda o dia de quem o usa, e o quanto um sistema mal feito
+          atrapalha. Essa vivência virou meu jeito de programar: antes de abrir o editor, eu
+          quero entender o processo, quem usa e qual problema precisa sair do caminho.
+        </p>
+        <p>
+          Hoje meu foco é <b>back-end</b>. É onde me sinto em casa: desenhar o modelo de dados,
+          transformar regra de negócio em código que não aceita estado inválido, separar
+          responsabilidades em camadas e garantir que cada permissão seja checada na camada
+          certa. No ABP do 3º semestre construí o back-end de um sistema de gestão de leads do
+          zero — autenticação JWT, RBAC de quatro papéis, Clean Architecture e uma máquina de
+          estados que impede o lead de pular etapas. Foi ali que a preferência virou convicção.
+        </p>
+      </div>
+
+      <aside class="goals reveal">
+        <h3 class="goals__title"><svg class="ico" aria-hidden="true"><use href="#i-target"></use></svg>Objetivos profissionais</h3>
+        <ul class="goals__list">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg>Consolidar-me como <b>desenvolvedor back-end</b> com Node.js/TypeScript e Python</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg>Aprofundar <b>arquitetura de software</b> — Clean Architecture, Hexagonal e padrões de projeto</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg>Dominar <b>modelagem de dados</b> em bancos relacionais e não relacionais</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg>Ganhar profundidade em <b>testes automatizados</b> e qualidade de código</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg>Evoluir em <b>Docker, CI/CD e cloud</b>, aproximando desenvolvimento e operação</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg>No longo prazo, atuar em <b>arquitetura de sistemas</b> e liderança técnica</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="skills">
+      <h3 class="sub-title"><svg class="ico" aria-hidden="true"><use href="#i-code"></use></svg>Conhecimentos técnicos</h3>
+      <div class="skills__grid">
+        <article class="skill-card reveal">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-server"></use></svg>Back-end</h4>
+          <ul class="chips">
+            <li>Node.js</li><li>Express</li><li>TypeScript</li><li>Python</li><li>FastAPI</li>
+            <li>Java</li><li>Spring Boot</li><li>Go</li><li>API REST</li><li>JWT</li><li>RBAC</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-globe"></use></svg>Front-end</h4>
+          <ul class="chips">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React</li>
+            <li>Vite</li><li>React Router</li><li>Recharts</li><li>Design responsivo</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-database"></use></svg>Dados</h4>
+          <ul class="chips">
+            <li>PostgreSQL</li><li>MongoDB</li><li>Prisma ORM</li><li>Mongoose</li>
+            <li>Redis</li><li>Modelagem (DER)</li><li>Agregações</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-terminal"></use></svg>Ferramentas e DevOps</h4>
+          <ul class="chips">
+            <li>Git</li><li>GitHub</li><li>Docker</li><li>Docker Compose</li>
+            <li>Jest</li><li>Vitest</li><li>Playwright</li><li>Celery</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-layers"></use></svg>Arquitetura e padrões</h4>
+          <ul class="chips">
+            <li>Clean Architecture</li><li>Arquitetura Hexagonal</li><li>SOLID</li>
+            <li>Repository</li><li>Service Layer</li><li>State</li><li>Strategy</li>
+            <li>Factory</li><li>Circuit Breaker</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>Processo</h4>
+          <ul class="chips">
+            <li>Scrum</li><li>Kanban</li><li>Conventional Commits</li>
+            <li>Code review</li><li>Git Flow</li><li>TDD</li><li>Documentação técnica</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROJETOS ============================ -->
+<section class="section section--alt" id="projetos">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-layers"></use></svg>Portfólio</p>
+      <h2 class="section__title">Meus <span>projetos</span></h2>
+      <p class="section__lead">
+        Organizados em acadêmicos, profissionais e pessoais. Em cada um deles o destaque é a
+        <b>minha contribuição individual</b> — o que exatamente saiu das minhas mãos.
+      </p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filtrar projetos por categoria">
+      <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+      <button class="filter" type="button" data-filter="academico" aria-pressed="false">Acadêmicos</button>
+      <button class="filter" type="button" data-filter="profissional" aria-pressed="false">Profissionais</button>
+      <button class="filter" type="button" data-filter="pessoal" aria-pressed="false">Pessoais</button>
+    </div>
+
+    <!-- ---------- ACADÊMICOS ---------- -->
+    <div class="group" data-group="academico">
+      <h3 class="group__title"><svg class="ico" aria-hidden="true"><use href="#i-cap"></use></svg>Projetos acadêmicos</h3>
+
+      <div class="grid">
+
+        <!-- ABP 3DSM -->
+        <article class="card card--wide reveal" data-cat="academico">
+          <div class="card__media">
+            <img src="img/projetos/valle-leads.webp" alt="Protótipo das telas de login do colaborador e de cadastro do cliente do sistema 1000 Valle" width="1280" height="720" loading="lazy" decoding="async">
+            <button class="card__zoom" type="button" data-gallery="valle" aria-label="Abrir galeria do projeto 1000 Valle">
+              <svg class="ico" aria-hidden="true"><use href="#i-expand"></use></svg><span>2 imagens</span>
+            </button>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag tag--hot">ABP</span>
+              <span class="tag">3DSM · 1º Sem. 2026</span>
+              <span class="tag">Equipe de 5 · Scrum</span>
+            </div>
+            <h4 class="card__title">1000 Valle — Sistema de Gestão de Leads</h4>
+            <p class="card__desc">
+              Sistema web para gerenciar todo o ciclo de vida de um lead comercial — captação,
+              qualificação, negociação e fechamento — com controle por loja, equipe e perfil de
+              usuário, dashboards analíticos por papel e uma vitrine pública de veículos com
+              fluxo de aprovação. Desenvolvido em parceria com a <b>1000 Valle Multimarcas</b>,
+              em Scrum, com três sprints de três semanas.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Backend Developer · 32 commits</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Inicializei o <b>back-end do zero</b>: Node.js + TypeScript + Express, Dockerfile e Docker Compose, e o schema Prisma com o CRUD de usuários e leads.</li>
+                <li>Implementei a <b>autenticação JWT</b> e o <b>RBAC de quatro papéis</b> (Atendente, Líder de Equipe, Gerente e Admin), com o escopo de acesso validado na camada de serviço — não só na rota.</li>
+                <li>Reestruturei o back-end em <b>Clean Architecture</b> de quatro camadas (presentation → application → domain → infrastructure), com os padrões Repository e Service Layer.</li>
+                <li>Modelei a <b>máquina de estados do lead</b> (padrão State): impede pular etapas do funil e exige motivo no fechamento.</li>
+                <li>Entreguei a feature completa de <b>publicação e moderação de veículos</b>, back-end e front-end: transições PENDING → APPROVED → SOLD/REJECTED, guard de concorrência no banco, limite de publicações por usuário e integração com a tabela FIPE.</li>
+                <li>Construí o <b>audit trail</b> (SystemLog) e a tela de logs com filtros e paginação server-side.</li>
+                <li>Escrevi os <b>testes</b> do validador, do service e das rotas HTTP com Jest e Vitest.</li>
+                <li>Corrigi falhas de segurança: <i>secrets</i> fixos no docker-compose, login inválido devolvendo 500 em vez de 401 e escopo de RBAC não verificado em operações por id.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>TypeScript</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li>
+              <li>JWT</li><li>Docker</li><li>React</li><li>Vite</li><li>Recharts</li><li>Jest</li><li>Vitest</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/NexussDev/abp-3-valle-leads-system" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              <a class="btn btn--sm" href="https://youtu.be/JZl4LicdbPs" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-play"></use></svg>Vídeo da Sprint 1</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Clay Mercearia -->
+        <article class="card reveal" data-cat="academico">
+          <div class="card__media">
+            <img src="img/projetos/clay-estoque.webp" alt="Protótipo da tela de gestão de estoque multi-loja do sistema Jorge Clay Mercearia" width="1280" height="720" loading="lazy" decoding="async">
+            <button class="card__zoom" type="button" data-gallery="clay" aria-label="Abrir galeria do projeto Jorge Clay Mercearia">
+              <svg class="ico" aria-hidden="true"><use href="#i-expand"></use></svg><span>4 imagens</span>
+            </button>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">3DSM · 1º Sem. 2026</span>
+              <span class="tag">Equipe de 5 · Scrum</span>
+            </div>
+            <h4 class="card__title">Jorge Clay Mercearia — Sistema Integrado</h4>
+            <p class="card__desc">
+              Projeto de sistema integrado para uma rede de cinco lojas de produtos importados:
+              vendas via WhatsApp com chatbot e catálogo, controle de estoque multi-loja com
+              alerta de mínimo, e PDV com emissão de nota e fechamento de caixa — todos
+              sincronizados por um servidor central. A entrega foi o escopo completo: backlog,
+              modelagem dos módulos e protótipos de alta fidelidade.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Scrum Master</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Atuei como <b>Scrum Master</b>: organizei o product backlog, conduzi o planejamento das sprints e mantive o quadro Kanban do time.</li>
+                <li>Criei a <b>estrutura do repositório</b> e a documentação base — módulos previstos, papéis da equipe e cronograma de sprints.</li>
+                <li>Defini os <b>padrões de engenharia</b> do time: estratégia de branches (main/develop/feature/bugfix), Conventional Commits e a <i>Definition of Done</i> usada para aceitar cada card.</li>
+                <li>Contribuí com as telas do sistema pela branch <code>feature/telas</code>.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>Scrum</li><li>Kanban</li><li>Trello</li><li>Prototipação</li><li>Git</li><li>GitHub</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/teodoroooo/clay-mercearia" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              <a class="btn btn--sm" href="https://trello.com/b/bsF4g3RJ/jorge-clay-mercearia-sistema-integrado" target="_blank" rel="noopener noreferrer">Quadro Kanban</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Guardião dos Biomas -->
+        <article class="card reveal" data-cat="academico">
+          <div class="card__media">
+            <img src="img/projetos/guardiao-splash.webp" alt="Tela de abertura do jogo Guardião dos Biomas em pixel art" width="1280" height="720" loading="lazy" decoding="async">
+            <button class="card__zoom" type="button" data-gallery="guardiao" aria-label="Abrir galeria do jogo Guardião dos Biomas">
+              <svg class="ico" aria-hidden="true"><use href="#i-expand"></use></svg><span>7 imagens</span>
+            </button>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">3DSM · 1º Sem. 2026</span>
+              <span class="tag">Dia do Meio Ambiente</span>
+              <span class="tag">Equipe de 5</span>
+            </div>
+            <h4 class="card__title">Guardião dos Biomas</h4>
+            <p class="card__desc">
+              Jogo de plataforma 2D em Godot sobre os <b>Objetivos de Desenvolvimento
+              Sustentável</b> da ONU, feito para o desafio do Dia do Meio Ambiente da Fatec
+              Jacareí. O jogador escolhe um Guardião — cada um representando um bioma
+              brasileiro — e atravessa quatro fases que tratam dos ODS 15, 14, 7 e 13,
+              enfrentando inimigos que personificam poluição, desmatamento e indústria suja.
+              A única arma do jogador é plantar uma semente.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Adaptação e entrega</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Partimos de um <b>projeto-base de plataforma 2D em Godot</b> usado como referência de aprendizado; o trabalho da equipe foi transformá-lo em um jogo com proposta própria.</li>
+                <li>Preparei a <b>versão de apresentação</b> do jogo, usada no evento — ajuste de fases, fluxo entre telas e balanceamento.</li>
+                <li>Corrigi os <b>bugs do executável exportado</b> (.exe), que se comportava de forma diferente do editor.</li>
+                <li>Implementei a <b>invulnerabilidade temporária no respawn</b>, que resolvia a morte em sequência ao renascer perto de um inimigo.</li>
+                <li>Produzi toda a <b>documentação do projeto</b>: README com as quatro fases, os guardiões, as mecânicas, os controles e as capturas de tela.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>Godot 4</li><li>GDScript</li><li>Game design</li><li>Pixel art</li><li>ODS / ONU</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/teodoroooo/guardiao-dos-biomas" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sistema de Reservas -->
+        <article class="card reveal" data-cat="academico">
+          <div class="card__media card__media--art" data-art="server">
+            <svg class="art" aria-hidden="true"><use href="#i-server"></use></svg>
+            <span class="art__label">TypeScript · Express · MongoDB</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">3DSM · 1º Sem. 2026</span>
+              <span class="tag">Avaliação — Desenvolvimento Web III</span>
+              <span class="tag">Dupla</span>
+            </div>
+            <h4 class="card__title">Sistema de Reservas de Mesa</h4>
+            <p class="card__desc">
+              Back-end completo para a gestão de reservas de mesas de um restaurante, com mapa
+              visual das mesas em tempo real e um front-end componentizado em JavaScript puro
+              servido pelo próprio Express. As reservas mudam de estado sozinhas conforme o
+              relógio: <code>reservado → ocupado → finalizado</code>.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Back-end</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Desenvolvi o <b>back-end em TypeScript com Express e MongoDB/Mongoose</b>: modelagem das coleções de mesas e reservas e a API REST de CRUD com filtros.</li>
+                <li>Centralizei as <b>regras de negócio no servidor</b> — capacidade da mesa, antecedência mínima e conflito de horário — em vez de confiar na validação do formulário.</li>
+                <li>Resolvi o <b>bug de integração</b> entre a API e o front-end que impedia as operações de reserva de concluírem.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>TypeScript</li><li>Express</li><li>MongoDB</li><li>Mongoose</li><li>JavaScript</li><li>API REST</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/MyNameisNunes/ProvaDesenvolvimentoWebIII-Gabriel-Thiago" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BDN -->
+        <article class="card reveal" data-cat="academico">
+          <div class="card__media card__media--art" data-art="database">
+            <svg class="art" aria-hidden="true"><use href="#i-database"></use></svg>
+            <span class="art__label">MongoDB · NoSQL</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">3DSM · 1º Sem. 2026</span>
+              <span class="tag">Individual</span>
+            </div>
+            <h4 class="card__title">Banco de Dados Não-Relacional — MongoDB</h4>
+            <p class="card__desc">
+              Portfólio da disciplina de Banco de Dados Não-Relacional: oito atividades práticas
+              de MongoDB, do ambiente à modelagem, cobrindo documentos, consultas, operadores e
+              agregações — além da reflexão sobre a evolução no semestre.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Individual</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Resolvi e documentei <b>todas as atividades práticas</b> das aulas, entregando cada uma com o enunciado, a solução e o resultado das consultas.</li>
+                <li>Modelei a <b>base de dados de uma plataforma de eSports</b> ("MegaArena") na atividade de revisão — decidindo onde embutir documentos e onde referenciar.</li>
+                <li>Escrevi o <b>tutorial completo de instalação e configuração do MongoDB no Windows</b>, usado como material de apoio.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>MongoDB</li><li>NoSQL</li><li>Modelagem de documentos</li><li>Agregações</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/teodoroooo/FATEC-JCR-3DSM-BDN-2026-1-gabriel-teodoro" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Atividades menores -->
+      <details class="more">
+        <summary class="more__summary">
+          <span>Atividades e exercícios das disciplinas</span>
+          <span class="more__count">7 repositórios</span>
+        </summary>
+        <ul class="more__list">
+          <li>
+            <a href="https://github.com/teodoroooo/app-clima" target="_blank" rel="noopener noreferrer"><b>app-clima</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Consulta de clima em tempo real com TypeScript, Express e a API do OpenWeatherMap, com tratamento de erro para cidade inexistente e chave inválida.</p>
+            <span class="more__tag">3DSM · 1º Sem. 2026 · TypeScript</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/atv-crud-shoppingitems" target="_blank" rel="noopener noreferrer"><b>atv-crud-shoppingitems</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>CRUD completo de lista de compras com TypeScript, Express e MongoDB/Mongoose, e front-end em HTML puro.</p>
+            <span class="more__tag">3DSM · 1º Sem. 2026 · TypeScript</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/cadastro-cliente" target="_blank" rel="noopener noreferrer"><b>cadastro-cliente</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Cadastro de clientes em TypeScript, exercitando tipagem, validação de entrada e persistência.</p>
+            <span class="more__tag">3DSM · 1º Sem. 2026 · TypeScript</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/atividade-prisma" target="_blank" rel="noopener noreferrer"><b>atividade-prisma</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Primeiros passos com o Prisma ORM: definição do schema, migrations e consultas tipadas.</p>
+            <span class="more__tag">3DSM · 1º Sem. 2026 · Prisma</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/rev-atv-prova1" target="_blank" rel="noopener noreferrer"><b>rev-atv-prova1</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Revisão prática para a primeira avaliação, em JavaScript e TypeScript.</p>
+            <span class="more__tag">3DSM · 1º Sem. 2026 · JavaScript</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Formulario" target="_blank" rel="noopener noreferrer"><b>Formulario</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Formulário HTML5 completo com todos os tipos de campo, validação nativa e versões com CSS interno e externo.</p>
+            <span class="more__tag">2DSM · 2º Sem. 2025 · HTML5 · CSS3</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Atividade-JSF" target="_blank" rel="noopener noreferrer"><b>Atividade-JSF</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Atividade com JavaServer Faces, explorando o modelo de componentes de servidor do ecossistema Java.</p>
+            <span class="more__tag">1DSM · 1º Sem. 2025 · Java</span>
+          </li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- ---------- PROFISSIONAIS ---------- -->
+    <div class="group" data-group="profissional">
+      <h3 class="group__title"><svg class="ico" aria-hidden="true"><use href="#i-case"></use></svg>Projetos profissionais</h3>
+
+      <div class="grid">
+        <article class="card card--wide reveal" data-cat="profissional">
+          <div class="card__media card__media--art" data-art="terminal">
+            <svg class="art" aria-hidden="true"><use href="#i-terminal"></use></svg>
+            <span class="art__label">Python · FastAPI · Celery · PostgreSQL</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag tag--hot">Fenoxtec</span>
+              <span class="tag">2026 · Em desenvolvimento</span>
+              <span class="tag tag--muted"><svg class="ico" aria-hidden="true"><use href="#i-lock"></use></svg>Código proprietário</span>
+            </div>
+            <h4 class="card__title">DO-Intelligence — Monitoramento de Diários Oficiais</h4>
+            <p class="card__desc">
+              Plataforma de automação que monitora os <b>Diários Oficiais</b> dos estados
+              brasileiros e da União, extrai as publicações que mencionam palavras-chave do
+              setor de vistoria veicular — Detran, ECV, Renave, Senatran, entre outras — e
+              dispara notificações por WhatsApp. Uma leitura manual que consumia parte de todos
+              os dias virou um pipeline que roda sozinho.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Desenvolvedor</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Desenhei a solução em <b>arquitetura hexagonal</b> (ports &amp; adapters), isolando o domínio dos detalhes de cada portal — que mudam sem avisar.</li>
+                <li>Apliquei <b>Strategy</b> para o scraper de cada estado e <b>Factory</b> para instanciar o scraper correto, o que permite adicionar um novo estado sem tocar no núcleo.</li>
+                <li>Implementei <b>Circuit Breaker e retry exponencial</b> para lidar com portais fora do ar sem derrubar a execução inteira.</li>
+                <li>Construí o pipeline de extração: <b>Playwright e BeautifulSoup</b> para scraping, <b>pdfplumber</b> para os PDFs e <b>Tesseract OCR</b> para os diários digitalizados como imagem.</li>
+                <li>Estruturei o processamento assíncrono com <b>Celery e Redis</b> e a API em <b>FastAPI</b> sobre PostgreSQL.</li>
+                <li>Adotei <b>test first</b>: os testes do parser e da extração de palavras-chave vêm antes da implementação, com cobertura total nos serviços de core.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>Python</li><li>FastAPI</li><li>Playwright</li><li>BeautifulSoup</li><li>pdfplumber</li>
+              <li>Tesseract OCR</li><li>Celery</li><li>Redis</li><li>PostgreSQL</li><li>Arquitetura Hexagonal</li><li>TDD</li>
+            </ul>
+            <p class="card__note">
+              <svg class="ico" aria-hidden="true"><use href="#i-lock"></use></svg>
+              Projeto interno da Fenoxtec — o repositório é privado, por isso não há link público.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ---------- PESSOAIS ---------- -->
+    <div class="group" data-group="pessoal">
+      <h3 class="group__title"><svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>Projetos pessoais</h3>
+
+      <div class="grid">
+
+        <article class="card reveal" data-cat="pessoal">
+          <div class="card__media card__media--art" data-art="spark">
+            <svg class="art" aria-hidden="true"><use href="#i-spark"></use></svg>
+            <span class="art__label">HTML5 · CSS3 · JavaScript</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">2º Sem. 2026</span>
+              <span class="tag">Individual</span>
+            </div>
+            <h4 class="card__title">Este portfólio</h4>
+            <p class="card__desc">
+              A página que você está lendo. Construída do zero em <b>HTML5, CSS3 e JavaScript
+              puro</b> — sem framework, sem etapa de build e sem uma única biblioteca de
+              terceiros, respeitando as restrições técnicas do portfólio digital da Fatec.
+              Tudo funciona a partir dos arquivos do próprio repositório.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Individual</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Design e <b>marcação semântica</b> acessível: landmarks, hierarquia de títulos, <i>skip link</i>, foco visível e suporte a <code>prefers-reduced-motion</code>.</li>
+                <li>CSS com <b>custom properties</b> e tema claro/escuro persistido em <code>localStorage</code>, respeitando a preferência do sistema na primeira visita.</li>
+                <li>JavaScript sem dependências: <b>IntersectionObserver</b> para o scroll spy e as animações de entrada, filtro de projetos por categoria, galeria em <i>lightbox</i> com teclado, menu mobile e barra de progresso de leitura.</li>
+                <li>Otimização das imagens para <b>WebP</b>, mantendo o site inteiro em poucas centenas de kilobytes.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>Acessibilidade</li><li>Responsivo</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/fatec-jacarei-dsm-portfolio/ra2581392613045" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-cat="pessoal">
+          <div class="card__media card__media--art" data-art="code">
+            <svg class="art" aria-hidden="true"><use href="#i-code"></use></svg>
+            <span class="art__label">Java · API REST</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">2025</span>
+              <span class="tag">Oracle Next Education · Alura</span>
+              <span class="tag">Individual</span>
+            </div>
+            <h4 class="card__title">GitHubInspector</h4>
+            <p class="card__desc">
+              Ferramenta de linha de comando em Java que consulta a API pública do GitHub e
+              exibe os dados de um usuário — nome, login, bio, quantidade de repositórios
+              públicos e localização — com mensagem clara quando o usuário não existe.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Individual</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Consumo da <b>API REST do GitHub</b> com o <code>HttpClient</code> nativo do Java.</li>
+                <li>Desserialização do JSON de resposta para objetos Java com <b>Gson</b>.</li>
+                <li><b>Exceção de domínio própria</b> (<code>ErroConsultaGitHubException</code>) para separar falha de requisição de usuário inexistente.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>Java</li><li>HttpClient</li><li>Gson</li><li>JSON</li><li>API REST</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/teodoroooo/GitHubInspectors" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-cat="pessoal">
+          <div class="card__media card__media--art" data-art="globe">
+            <svg class="art" aria-hidden="true"><use href="#i-globe"></use></svg>
+            <span class="art__label">HTML5 · CSS3 · JavaScript</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">2024</span>
+              <span class="tag">Projeto em equipe</span>
+            </div>
+            <h4 class="card__title">Fire Music</h4>
+            <p class="card__desc">
+              Plataforma de streaming de música com páginas por gênero — axé, clássica,
+              eletrônica, hip hop e jazz —, player de áudio, tela de letras, busca e fluxo de
+              cadastro e login. Projeto em equipe, publicado no GitHub Pages.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Front-end</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Implementei funcionalidades do <b>player de áudio</b> e o <b>modal</b> de interface.</li>
+                <li>Adicionei músicas ao acervo e ajustei as páginas de gênero.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://cristianodecsantos.github.io/Fire_Music/" target="_blank" rel="noopener noreferrer">Ver o site<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              <a class="btn btn--sm" href="https://github.com/cristianodecsantos/Fire_Music" target="_blank" rel="noopener noreferrer">Repositório</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-cat="pessoal">
+          <div class="card__media card__media--art" data-art="layers">
+            <svg class="art" aria-hidden="true"><use href="#i-layers"></use></svg>
+            <span class="art__label">HTML5 · CSS3 · JavaScript</span>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">2023</span>
+              <span class="tag">CoderHouse</span>
+              <span class="tag">Individual</span>
+            </div>
+            <h4 class="card__title">Marvel — Projeto Filmes</h4>
+            <p class="card__desc">
+              Site sobre o universo Marvel, entregue como projeto final do curso de
+              desenvolvimento web da CoderHouse. Foi meu primeiro projeto publicado — e o
+              começo de tudo o que veio depois.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Individual</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Estrutura <b>HTML semântica</b> e layout responsivo em CSS, do zero.</li>
+                <li>Interações em <b>JavaScript</b> e publicação no GitHub Pages.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://teodoroooo.github.io/Projeto-SUPERHER-IS/" target="_blank" rel="noopener noreferrer">Ver o site<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              <a class="btn btn--sm" href="https://github.com/teodoroooo/Projeto-SUPERHER-IS" target="_blank" rel="noopener noreferrer">Repositório</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <details class="more">
+        <summary class="more__summary">
+          <span>Estudos, desafios e primeiros projetos</span>
+          <span class="more__count">9 repositórios</span>
+        </summary>
+        <ul class="more__list">
+          <li>
+            <a href="https://github.com/teodoroooo/screenmatch-sem-web" target="_blank" rel="noopener noreferrer"><b>screenmatch-sem-web</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Catálogo de séries em Java com Spring Boot, consumindo uma API pública e convertendo o JSON com Jackson.</p>
+            <span class="more__tag">2025 · Java · Spring Boot</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/ChallengeConversorMoedasAlura" target="_blank" rel="noopener noreferrer"><b>ChallengeConversorMoedas</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Conversor de moedas em Java consumindo a ExchangeRate-API, com log das conversões realizadas.</p>
+            <span class="more__tag">2025 · Java · Oracle ONE</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Challenge-AmigoSecreto" target="_blank" rel="noopener noreferrer"><b>Challenge-AmigoSecreto</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Sorteio de amigo secreto no navegador, com validação de entrada e manipulação de DOM em JavaScript.</p>
+            <span class="more__tag">2025 · JavaScript · Oracle ONE</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Jogo-NumeroSecreto" target="_blank" rel="noopener noreferrer"><b>Jogo-NumeroSecreto</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Jogo de adivinhação com número aleatório, contagem de tentativas e síntese de voz do navegador.</p>
+            <span class="more__tag">2025 · JavaScript · Oracle ONE</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Spotify-Clone" target="_blank" rel="noopener noreferrer"><b>Spotify-Clone</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Reconstrução da interface do Spotify em HTML e CSS, como exercício de layout e fidelidade visual.</p>
+            <span class="more__tag">2025 · HTML5 · CSS3</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Clima-APP" target="_blank" rel="noopener noreferrer"><b>Clima-APP</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Primeiro contato com React, consultando uma API de previsão do tempo e lidando com estado de carregamento.</p>
+            <span class="more__tag">2024 · React</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/e-commerce" target="_blank" rel="noopener noreferrer"><b>e-commerce</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Loja virtual em React com Vite e SCSS: listagem de produtos, componentes reutilizáveis e carrinho.</p>
+            <span class="more__tag">2024 · React · Vite</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Go-restAPI" target="_blank" rel="noopener noreferrer"><b>Go-restAPI</b> e <b>Go-API</b><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Minhas primeiras APIs REST em Go, explorando rotas, handlers e serialização JSON numa linguagem compilada.</p>
+            <span class="more__tag">2024 · Go</span>
+          </li>
+          <li>
+            <a href="https://github.com/teodoroooo/Portifolio" target="_blank" rel="noopener noreferrer"><b>Portifolio</b> (primeira versão)<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <p>Meu primeiro portfólio, de 2024. Fica aqui de propósito: comparar com esta página é a forma mais honesta de mostrar o quanto mudou em dois anos.</p>
+            <span class="more__tag">2024 · HTML5 · CSS3</span>
+          </li>
+        </ul>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ TRAJETÓRIA ============================ -->
+<section class="section" id="trajetoria">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-cap"></use></svg>Informações complementares</p>
+      <h2 class="section__title">Formação e <span>trajetória</span></h2>
+    </header>
+
+    <div class="tra">
+      <div class="tra__main">
+        <h3 class="sub-title"><svg class="ico" aria-hidden="true"><use href="#i-cap"></use></svg>Formação acadêmica</h3>
+        <ol class="timeline">
+          <li class="timeline__item is-current reveal">
+            <span class="timeline__when">1º Sem. 2025 — em andamento</span>
+            <h4 class="timeline__what">Desenvolvimento de Software Multiplataforma</h4>
+            <p class="timeline__where">Fatec Jacareí — Faculdade de Tecnologia de Jacareí</p>
+            <p class="timeline__note">Tecnólogo, atualmente no 4º semestre. Turma de ingresso do 1º semestre de 2025.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__when">2023 — 2024</span>
+            <h4 class="timeline__what">Engenharia de Software</h4>
+            <p class="timeline__where">Anhanguera</p>
+            <p class="timeline__note">Cursado parcialmente até o 2º semestre, antes da migração para o curso de DSM na Fatec.</p>
+          </li>
+        </ol>
+
+        <h3 class="sub-title"><svg class="ico" aria-hidden="true"><use href="#i-badge"></use></svg>Cursos e certificações</h3>
+        <div class="courses">
+          <article class="course reveal">
+            <h4>Oracle Next Education (ONE) — Alura</h4>
+            <p>Formação em Java e front-end. Desafios entregues: conversor de moedas, catálogo de séries com Spring Boot, GitHubInspector, jogo do número secreto e amigo secreto.</p>
+            <span class="course__when">2025</span>
+          </article>
+          <article class="course reveal">
+            <h4>CoderHouse — Desenvolvimento Web</h4>
+            <p>Fundamentos de HTML, CSS e JavaScript, com projeto final publicado.</p>
+            <span class="course__when">2023</span>
+          </article>
+          <article class="course reveal">
+            <h4>Godot — Desenvolvimento de jogos 2D</h4>
+            <p>Estudo de Godot 4 e GDScript aplicado no projeto Guardião dos Biomas: máquinas de estado, física 2D, tilemaps e exportação do executável.</p>
+            <span class="course__when">2026</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="tra__side">
+        <article class="side-card reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-case"></use></svg>Experiência</h3>
+          <ul class="side-list">
+            <li><b>Desenvolvedor — Fenoxtec</b><span>Automação e integrações para o setor de vistoria veicular.</span></li>
+            <li><b>Auxiliar de PCP</b><span>Planejamento e controle da produção. Onde aprendi a olhar processo antes de olhar código.</span></li>
+          </ul>
+        </article>
+
+        <article class="side-card reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-lang"></use></svg>Idiomas</h3>
+          <ul class="side-list side-list--lang">
+            <li><b>Português</b><span>Nativo</span></li>
+            <li><b>Inglês</b><span>Leitura técnica — documentação, artigos e código</span></li>
+          </ul>
+        </article>
+
+        <article class="side-card reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>Interesses</h3>
+          <ul class="chips">
+            <li>Desenvolvimento de jogos</li><li>Arquitetura de software</li><li>Automação</li>
+            <li>Música</li><li>Games</li><li>Hardware</li>
+          </ul>
+        </article>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VÍDEOS ============================ -->
+<section class="section section--alt" id="videos">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-play"></use></svg>Avaliação do portfólio</p>
+      <h2 class="section__title">Vídeos de <span>apresentação</span></h2>
+      <p class="section__lead">
+        O portfólio é avaliado nos semestres pares. Em cada avaliação, um pitch de cerca de um
+        minuto apresentando quem sou, minhas áreas de interesse e a contribuição individual nas
+        duas ABPs mais recentes.
+      </p>
+    </header>
+
+    <div class="videos">
+      <article class="video-card reveal">
+        <span class="video-card__sem">2DSM</span>
+        <h3>2º semestre</h3>
+        <p>2º Sem. 2025 — ABPs do 1º e 2º semestres.</p>
+        <!-- Substitua o href por LINK_VIDEO_2DSM e remova o atributo data-empty quando o vídeo existir -->
+        <a class="btn btn--sm is-disabled" href="#videos" data-empty="true" aria-disabled="true">Sem registro</a>
+      </article>
+
+      <article class="video-card video-card--now reveal">
+        <span class="video-card__sem">4DSM</span>
+        <h3>4º semestre <em>· avaliação atual</em></h3>
+        <p>2º Sem. 2026 — ABPs do 3º e 4º semestres.</p>
+        <!-- TODO: trocar o href pelo link do YouTube depois de publicar o vídeo -->
+        <a class="btn btn--sm btn--primary is-disabled" href="#videos" data-empty="true" aria-disabled="true"><svg class="ico" aria-hidden="true"><use href="#i-play"></use></svg>A publicar</a>
+      </article>
+
+      <article class="video-card reveal">
+        <span class="video-card__sem">6DSM</span>
+        <h3>6º semestre</h3>
+        <p>Previsto para o 2º Sem. 2027 — ABPs do 5º e 6º semestres.</p>
+        <a class="btn btn--sm is-disabled" href="#videos" data-empty="true" aria-disabled="true">Em breve</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTATO ============================ -->
+<section class="section" id="contato">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="contact__txt">
+        <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>Contato</p>
+        <h2 class="section__title">Vamos <span>conversar</span></h2>
+        <p>
+          Estou aberto a oportunidades e trocas na área de desenvolvimento back-end. O melhor
+          caminho é o LinkedIn; o código está todo no GitHub.
+        </p>
+      </div>
+      <div class="contact__links">
+        <a class="contact-btn" href="https://github.com/teodoroooo" target="_blank" rel="noopener noreferrer">
+          <svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg>
+          <span><b>GitHub</b><small>@teodoroooo</small></span>
+          <svg class="ico ico--go" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+        <a class="contact-btn" href="https://www.linkedin.com/in/gabrielteodoroo" target="_blank" rel="noopener noreferrer">
+          <svg class="ico" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+          <span><b>LinkedIn</b><small>in/gabrielteodoroo</small></span>
+          <svg class="ico ico--go" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__id">
+      <span class="brand__mark" aria-hidden="true">GT</span>
+      <div>
+        <b>Gabriel Reginaldo Teodoro dos Santos</b>
+        <small>Desenvolvimento de Software Multiplataforma · Fatec Jacareí · Turma do 1º semestre de 2025</small>
+      </div>
+    </div>
+    <div class="site-footer__social">
+      <a class="icon-btn" href="https://github.com/teodoroooo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg></a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/gabrielteodoroo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+    </div>
+    <p class="site-footer__meta">
+      Feito com HTML, CSS e JavaScript puro — sem frameworks e sem bibliotecas externas.
+      <span>&copy; <span id="ano">2026</span></span>
+    </p>
+  </div>
+</footer>
+
+<!-- ============================ LIGHTBOX ============================ -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Galeria do projeto">
+  <button class="lb__close icon-btn" id="lbClose" type="button" aria-label="Fechar galeria"><svg class="ico" aria-hidden="true"><use href="#i-x"></use></svg></button>
+  <button class="lb__nav lb__nav--prev icon-btn" id="lbPrev" type="button" aria-label="Imagem anterior"><svg class="ico" aria-hidden="true"><use href="#i-left"></use></svg></button>
+  <figure class="lb__fig">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb__nav lb__nav--next icon-btn" id="lbNext" type="button" aria-label="Próxima imagem"><svg class="ico" aria-hidden="true"><use href="#i-right"></use></svg></button>
+  <p class="lb__count" id="lbCount"></p>
+</div>
+
+<script src="js/main.js" defer></script>
 </body>
 </html>

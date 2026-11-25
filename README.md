@@ -14,6 +14,6 @@
 
 **Vídeos de Apresentação**
 
-🎤 2DSM - [Vídeo](LINK_VIDEO_2DSM)  
-🎤 4DSM - [Vídeo](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392613045/video/apresentacao-4dsm.mp4)  
+🎤 2DSM - Não se aplica *(ingressei no curso diretamente no 3º semestre; não participei da avaliação do 2DSM)*  
+🎤 4DSM - [Vídeo](https://youtu.be/_ZirJ_xJBaU)  
 🎤 6DSM - [Vídeo](LINK_VIDEO_6DSM)

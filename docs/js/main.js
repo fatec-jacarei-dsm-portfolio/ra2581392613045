@@ -164,6 +164,10 @@
 
   /* ------------------------------------------------- 7. LIGHTBOX */
   const GALLERIES = {
+    acesso: [
+      { src: 'img/projetos/acesso-arquitetura.webp',  cap: 'Arquitetura: app Flutter e terminal ESP32 falam com a API REST, que decide o acesso, grava no PostgreSQL e avisa a catraca pelo broker MQTT.' },
+      { src: 'img/projetos/acesso-casos-de-uso.webp', cap: 'Diagrama de casos de uso: administração, aplicativo móvel e terminal de acesso.' }
+    ],
     valle: [
       { src: 'img/projetos/valle-leads.webp', cap: 'Protótipo das telas de acesso: área do colaborador e cadastro do cliente na vitrine pública.' },
       { src: 'img/projetos/valle-der.webp',   cap: 'Diagrama entidade-relacionamento do banco — modelo que sustenta leads, equipes, lojas, negociações e a vitrine de veículos.' }

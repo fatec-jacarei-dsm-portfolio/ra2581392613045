@@ -146,6 +146,8 @@
           certa. No ABP do 3º semestre construí o back-end de um sistema de gestão de leads do
           zero — autenticação JWT, RBAC de quatro papéis, Clean Architecture e uma máquina de
           estados que impede o lead de pular etapas. Foi ali que a preferência virou convicção.
+          No ABP do 4º semestre voltei ao back-end, agora de um sistema de controle de acesso com
+          IoT: API, banco, QR Code rotativo de uso único, CI e deploy em homologação.
         </p>
       </div>
 
@@ -237,6 +239,54 @@
       <h3 class="group__title"><svg class="ico" aria-hidden="true"><use href="#i-cap"></use></svg>Projetos acadêmicos</h3>
 
       <div class="grid">
+
+        <!-- ABP 4DSM -->
+        <article class="card card--wide reveal" data-cat="academico">
+          <div class="card__media">
+            <img src="img/projetos/acesso-arquitetura.webp" alt="Diagrama de arquitetura do Sistema Integrado de Controle de Acesso: app Flutter, terminal ESP32, API REST, PostgreSQL e broker MQTT" width="1600" height="903" loading="lazy" decoding="async">
+            <button class="card__zoom" type="button" data-gallery="acesso" aria-label="Abrir galeria do projeto Sistema Integrado de Controle de Acesso">
+              <svg class="ico" aria-hidden="true"><use href="#i-expand"></use></svg><span>2 imagens</span>
+            </button>
+          </div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag tag--hot">ABP</span>
+              <span class="tag">4DSM · 2º Sem. 2026</span>
+              <span class="tag">Equipe de 7 · Scrum</span>
+            </div>
+            <h4 class="card__title">Sistema Integrado de Controle de Acesso — IoT, app e nuvem</h4>
+            <p class="card__desc">
+              Sistema de baixo custo para controlar a entrada de pessoas em um edifício. A catraca
+              é liberada lendo, pelo aplicativo, o QR Code rotativo exibido no terminal ou
+              apresentando uma tag NFC. A decisão de liberar ou negar é sempre do back-end na
+              nuvem, que registra toda tentativa e avisa o terminal ESP32 por MQTT. App em Flutter,
+              API em Node.js e PostgreSQL. Desenvolvido em Scrum, com três sprints.
+            </p>
+            <div class="contrib">
+              <h5 class="contrib__head">
+                <svg class="ico" aria-hidden="true"><use href="#i-spark"></use></svg>
+                Minha contribuição <span class="contrib__role">Backend Developer · 48 commits</span>
+              </h5>
+              <ul class="contrib__list">
+                <li>Criei a <b>base do back-end do zero</b>: Node.js + Express + TypeScript em camadas (rotas → controllers → services → repositories), variáveis de ambiente validadas com Zod e Swagger gerado dos mesmos schemas que validam as requisições.</li>
+                <li>Configurei o <b>Docker</b> (imagem em estágios, sem root) e o docker-compose com API, PostgreSQL e broker MQTT, além do <b>pipeline de CI</b> no GitHub Actions com lint, tipos, build e testes.</li>
+                <li>Implementei o <b>login com JWT</b> de 15 minutos e refresh token com rotação e detecção de reuso, senhas com <b>Argon2id</b>, perfis (administrador, condômino e visitante) e o cadastro de usuários restrito ao admin.</li>
+                <li>Modelei o <b>banco de dados</b> com Prisma: usuários, locais em hierarquia (edifício › portaria › porta › catraca), terminais com credencial própria do dispositivo, autorizações e eventos de acesso, com seed de demonstração.</li>
+                <li>Construí a <b>API de autorizações</b> com filtros, situação, cancelamento e cadastro de visitante novo, com datas e horários no fuso do edifício.</li>
+                <li>Desenvolvi o <b>QR Code rotativo de 10 segundos</b> e de uso único, com só o hash do segredo no banco e uso único garantido mesmo com leituras simultâneas. Ajustei o código para caber legível no display OLED do terminal.</li>
+                <li>Entreguei o <b>histórico de tentativas de acesso</b> na API, com filtros por pessoa, local, terminal, método, resultado e período.</li>
+                <li>Montei o <b>deploy automático em homologação</b> depois do CI: API no Render, banco no Neon e broker MQTT no EMQX Cloud, com o pipeline conferindo a versão publicada.</li>
+              </ul>
+            </div>
+            <ul class="chips chips--tech">
+              <li>TypeScript</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li>
+              <li>JWT</li><li>MQTT</li><li>Docker</li><li>GitHub Actions</li><li>Flutter</li><li>ESP32</li>
+            </ul>
+            <div class="card__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/heloisa-cardillo/ABP-4-Semestre-" target="_blank" rel="noopener noreferrer">Repositório<svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </div>
+        </article>
 
         <!-- ABP 3DSM -->
         <article class="card card--wide reveal" data-cat="academico">
